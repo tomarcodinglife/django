@@ -132,6 +132,7 @@ def about(request):
 
 ```
 <!-- .......................................................................... -->
+
 <h3>How to set in setting.py for new page load</h3>
 
 ```python
