@@ -34,3 +34,5 @@ python manage.py runserver
 ```terminal
 python manage.py runserver 80001
 ```
+## Django Data flow
+<img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/Django%20Data%20Flow%20Diagram%20(Colorful).png?raw=true" alt="" height="" title="Django Data Flow">
