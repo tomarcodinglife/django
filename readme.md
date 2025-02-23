@@ -1,7 +1,9 @@
 # Django
 Django is a Python framework that makes it easier to create web sites using Python.
 
-## Install UV
+<font size="4">Install UV</font>
+<!-- ## Install UV -->
+
 UV is extermiliy fast Python package so that reason i install UV
 ``` terminal
 pip install uv
