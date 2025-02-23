@@ -35,8 +35,5 @@ python manage.py runserver
 python manage.py runserver 80001
 ```
 ## Django Data flow
-first way
-User => HTTP Response => Render Template/JSON => Veiw FUnction => URL Match in URL Router => Model => Data Base
----
-second way
-user => request => url.py => views.py (function / logic) => response
+User => HTTP Response => URL Match in URL Router (url.py) => veiw function (views.py) => Render Template/JSON => Model => Data Base
+
