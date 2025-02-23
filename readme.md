@@ -188,7 +188,8 @@ TEMPLATES = [
 </body>
 </html>
 ```
-# How to seting (seting.py) static file directory file in django
+<!-- .......................................................................... -->
+<h3>How to seting (seting.py) static file directory file in django</h3>
 ```python
 import os # import os library for 
 from pathlib import Path
