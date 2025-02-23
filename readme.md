@@ -1,53 +1,61 @@
 # Django
 Django is a Python framework that makes it easier to create web sites using Python.
 
-<font size="6">Install UV</font>
-<h3>Install UV<h3>
+<h3>Install UV</h3>
 <!-- ## Install UV -->
-
 UV is extermiliy fast Python package so that reason i install UV
 ``` terminal
 pip install uv
 ```
-## Create Virtal Environment with pip and uv
+<!-- .......................................................................... -->
+<h3>Create Virtal Environment with pip and uv</h3>
 ``` terminal
 pip uv venv
 ```
-## Virtal Environment Activate
+<!-- .......................................................................... -->
+<h3>Virtual Environment Activate</h3>
 ```terminal
 .venv\Script\activate
 ```
-## Virtal Environment Deactivate
+<!-- .......................................................................... -->
+<h3>Virtual Environment Deactivate</h3>
 ```terminal
 dectivate
 ```
-## Install Django
+<!-- .......................................................................... -->
+<h3>Install Django</h3>
 ```terminal
 uv pip install Django
 ```
-## Start Project Start
+<!-- .......................................................................... -->
+<h3>Start Project Start</h3>
 ```terminal
 django-admin startproject DjangowithTomar
 ```
-## Run Server 
+<!-- .......................................................................... -->
+<h3>Run Server</h3>
 ```terminal
 python manage.py runserver
 ```
-## Run Server with specific port if not direct run on default port
+<!-- .......................................................................... -->
+<h3>Run Server with specific port if not direct run on default port<h3> 
 ```terminal
 python manage.py runserver 80001
 ```
-## Django Data flow
+<!-- .......................................................................... -->
+<h3>Django Data flow</h3>
 User => HTTP Response => URL Match in URL Router (url.py) => veiw function (views.py) => Render Template/JSON => model.py => Data Base
 
-## Ready to Response 
+<!-- .......................................................................... -->
+<h3>Ready to Response</h3>
+
 after virtual environment go to views.py and import HttpResponse from django.http
 ```python
 from django.http import HttpResponse
 
 ```
-
-## Write function in views.py
+<!-- .......................................................................... -->
+<h3>Write function in views.py</h3>
 
 ```python
 from django.http import HttpResponse
@@ -64,13 +72,14 @@ def service(request):
 def contact(request):
     return HttpResponse("Hi This is contact Page")
 ```
+<!-- .......................................................................... -->
+<h3>views import in urls.py</h3>
 
-# views import in urls.py
 ```python
 from ./ import views
 ```
-
-# urls handle in urls.py
+<!-- .......................................................................... -->
+<h3>urls handle in urls.py</h3>
 
 ```python
 from ./ import views
@@ -81,26 +90,34 @@ urlpatterns = [
     path('/contact', views.contact, name='contact')
 ]
 ```
+<!-- .......................................................................... -->
+<h3>Run project</h3>
 
-# Run project 
 ```terminal
 python manage.py runserver
 ```
+<!-- .......................................................................... -->
+<h3>How to create Templates folder</h3>
 
-# How to create Templates folder
 under main project folder (root folder) you can create a folder to templates name for contain html files
 
-# How to create static folder 
+<!-- .......................................................................... -->
+
+<h3>How to create static folder </h3>
 under main project folder (root folder) you can create a folder to static name for contain css, javascript files
 
+<!-- .......................................................................... -->
 
-# Which class import for data response to client web browser
+<h3>Which class import for data response to client web browser</h3>
+
 ```python
 from django.http import HttpResponse
 
 ```
+<!-- .......................................................................... -->
 
-# Which function import for html files render 
+<h3>Which function import for html files render</h3>
+
 ```python
 from django.shortcut import render 
 
@@ -114,8 +131,9 @@ def about(request):
     return render (request, 'website/index.html')
 
 ```
+<!-- .......................................................................... -->
+<h3>How to set in setting.py for new page load</h3>
 
-# How to set in setting.py for new page load 
 ```python
 # in templates section by default look like this 
 TEMPLATES = [
@@ -150,7 +168,9 @@ TEMPLATES = [
     },
 ]
 ```
-# How to link css with html in django
+<!-- .......................................................................... -->
+<h3>How to link css with html in django</h3>
+
 ```html
 {% load static %}  <!--Load static engine -->
 <!DOCTYPE html>
