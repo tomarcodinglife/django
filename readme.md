@@ -37,3 +37,23 @@ python manage.py runserver 80001
 ## Django Data flow
 User => HTTP Response => URL Match in URL Router (url.py) => veiw function (views.py) => Render Template/JSON => model.py => Data Base
 
+## Ready to Response 
+after virtual environment go to views.py and import HttpResponse from django.http
+```python
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("Hi This is Home Page")
+
+def about(request):
+    return HttpResponse("Hi This is about Page")
+
+def service(request):
+    return HttpResponse("Hi This is service Page")
+
+def contact(request):
+    return HttpResponse("Hi This is contact Page")
+
+```
+
+
