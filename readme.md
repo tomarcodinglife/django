@@ -1,6 +1,8 @@
 # Django
 Django is a Python framework that makes it easier to create web sites using Python.
 
+<h2>Installation Section</h2>
+
 <h3>Install UV</h3>
 <!-- ## Install UV -->
 
@@ -65,12 +67,18 @@ python manage.py runserver
 python manage.py runserver 80001
 
 ```
+
+<h2>Data Flow Section</h2>
+
 <!-- .......................................................................... -->
+
 <h3>Django Data flow</h3>
 User => HTTP Response => URL Match in URL Router (url.py) => veiw function (views.py) => Render Template/JSON => model.py => Data Base
 
+<h2>Directory Section</h2>
+
 <!-- .......................................................................... -->
-<h3>Ready to Response</h3>
+<h3>How to make Ready to Response file</h3>
 
 after virtual environment go to views.py and import HttpResponse from django.http
 
@@ -228,7 +236,7 @@ TEMPLATES = [
 
 ```
 <!-- .......................................................................... -->
-<h3>How to seting (seting.py) static file directory file in django</h3>
+<h3>How to setting (setting.py) static file directory file in django</h3>
 
 ```python
 
@@ -240,5 +248,9 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 ```
+<h2>App Section</h2>
+<h3>How to create apps in django</h3>
+<p>first of all go to root folder</p>
+
 
 
