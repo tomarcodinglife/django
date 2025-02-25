@@ -282,5 +282,5 @@ INSTALLED_APPS = [
 
 <h2>How add django html for suggestion (emmet) for new app </h2>
 <p> press (ctrl + ,) => go to Emmet include Language and set the language</p>
-<img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/django-html_set_in_emmet_language.png" alt="" height="500px" title="set emmet language">
+<img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/django-html_set_in_emmet_language.png" alt="" height="300px" title="set emmet language">
 
