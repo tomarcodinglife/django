@@ -250,7 +250,15 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 ```
 <h2>App Section</h2>
 <h3>How to create apps in django</h3>
-<p>first of all go to root folder</p>
+<p>first of all go to root folder where you can see manage.py file by terminal ls command</p>
+<p>after that run command</p>
+
+```terminal
+
+python manage.py startapp myApp
+
+```
+
 
 
 
