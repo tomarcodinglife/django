@@ -293,7 +293,8 @@ INSTALLED_APPS = [
 <h3>How to create files under templates under new app  (like - myApp)<h3>
 <img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/Django_myApp_templates_under_create_files.gif" alt="" height="400px" title="Create html Files under Django App templates">
 
+<!-- .......................................................................... -->
 
-<h3>How to control transfer urls.py under new app (like - myApp)<h3>
+<h3>How to control transfer root file urls.py to under new app urls.py (like - myApp)<h3>
 <img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/my_app_urls_views_setup.gif" alt="" height="400px" title="myApp connect urls.py to main file's urls.py">
 
