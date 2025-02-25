@@ -249,13 +249,30 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 ```
 <h2>App Section</h2>
-<h3>How to create apps in django</h3>
-<p>first of all go to root folder where you can see manage.py file by terminal ls command</p>
-<p>after that run command</p>
+<h3>How to create apps folder in django</h3>
+<p>first of all go to root folder where you can see manage.py file by terminal ls command after that run command</p>
 
 ```terminal
 
 python manage.py startapp myApp
+
+```
+
+<h2>How to aware my new app folder in django </h2>
+<p>Go to settings.py file where you see by default installed apps you join the new app name that you create like myApp</p>
+
+```python
+
+INSTALLED_APPS = [
+    
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'myApp',
+]
 
 ```
 
