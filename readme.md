@@ -248,7 +248,7 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 ```
-<h2>App Section</h2>
+<h2>App Section </h2>
 <h3>How to create apps folder in django</h3>
 <p>first of all go to root folder where you can see manage.py file by terminal ls command after that run command</p>
 
@@ -278,7 +278,9 @@ INSTALLED_APPS = [
 
 <h2>Where can you create templates folder for New App (like myApp)</h2>
 <p>you can use templates folder which is already exist in root directory or you can create a folder under new app (like - myApp)<p>
-<img hight=100px src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/File_Directory_for_Django.png" alt="" height="500px" title="Directory">
+<img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/File_Directory_for_Django.png" alt="" height="500px" title="Directory">
 
-
+<h2>How add django html for suggestion (emmet) for new app </h2>
+<p> press (ctrl + ,) => go to Emmet include Language and set the language</p>
+<img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/django-html_set_in_emmet_language.png" alt="" height="500px" title="set emmet language">
 
