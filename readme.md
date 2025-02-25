@@ -278,7 +278,7 @@ INSTALLED_APPS = [
 
 <h2>Where can you create templates folder for New App (like myApp)</h2>
 <p>you can use templates folder which is already exist in root directory or you can create a folder under new app (like - myApp)<p>
-<img hight=100px >https://github.com/tomarcodinglife/Data_File/blob/main/imageData/File%20Directory%20for%20Django.png<img>
+<img hight=100px >https://github.com/tomarcodinglife/Data_File/tree/main/imageData/File-Directory-for-Django.png<img>
 
 
 
