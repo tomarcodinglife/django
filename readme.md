@@ -248,7 +248,9 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 ```
+<!-- .......................................................................... -->
 <h2>App Section </h2>
+<!-- .......................................................................... -->
 <h3>How to create apps folder in django</h3>
 <p>first of all go to root folder where you can see manage.py file by terminal ls command after that run command</p>
 
@@ -257,7 +259,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 python manage.py startapp myApp
 
 ```
-
+<!-- .......................................................................... -->
 <h2>How to aware my new app folder in django </h2>
 <p>Go to settings.py file where you see by default installed apps you join the new app name that you create like myApp</p>
 
@@ -275,12 +277,23 @@ INSTALLED_APPS = [
 ]
 
 ```
-
+<!-- .......................................................................... -->
 <h2>Where can you create templates folder for New App (like myApp)</h2>
 <p>you can use templates folder which is already exist in root directory or you can create a folder under new app (like - myApp)<p>
 <img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/File_Directory_for_Django.png" alt="" height="500px" title="Directory">
 
+<!-- .......................................................................... -->
+
 <h2>How add django html for suggestion (emmet) for new app </h2>
-<p> press (ctrl + ,) => go to Emmet include Language and set the language</p>
+<p> press (ctrl + ,) => go to Emmet include Language and set in item section django-html and in value section html</p>
 <img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/django-html_set_in_emmet_language.png" alt="" height="300px" title="set emmet language">
+
+<!-- .......................................................................... -->
+
+<h2>How to create files under templates under new app  (like - myApp)<h2>
+<img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/Django_myApp_templates_under_create_files.gif" alt="" height="400px" title="Create html Files under Django App templates">
+
+
+<h2>How to control transfer urls.py under new app (like - myApp)<h2>
+
 
