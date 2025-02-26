@@ -328,6 +328,16 @@ python -m ensurepip --upgrade
 
 ```terminal
 
+pip install django-tailwind
+
+```
+<!-- .......................................................................... -->
+
+```terminal
+
 pip install 'django-tailwind[reload]'
 
 ```
+
+<h3>How to add tailwind in root folder's setting.py<h3>
+<img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/tailwind_app_add_in_setting.py_file.png" alt="" height="400px" title="tailwind app add in root folder's setting.py">
