@@ -298,3 +298,37 @@ INSTALLED_APPS = [
 <h3>How to control transfer root file urls.py to under new app urls.py (like - myApp)<h3>
 <img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/my_app_urls_views_setup.gif" alt="" height="400px" title="myApp connect urls.py to main file's urls.py">
 
+<!-- .......................................................................... -->
+<h2>Tailwind Install with Django<h2>
+<!-- .......................................................................... -->
+<h3>How to install tailwind<h3>
+<p>first you should know that tailwind install in Django without error with pip so please check your pip working or not if not working then install again with following two command but use any one command. </p>
+
+<!-- .......................................................................... -->
+
+<h4>First Command<h4>
+
+```terminal
+
+python -m pip install --upgrade pip
+
+```
+<!-- .......................................................................... -->
+
+<h4>Second Command<h4> 
+
+```terminal
+
+python -m ensurepip --upgrade
+
+```
+
+<!-- .......................................................................... -->
+
+<h3>How to install tailwind with Django using Command<h3>
+
+```terminal
+
+pip install 'django-tailwind[reload]'
+
+```
