@@ -324,7 +324,7 @@ python -m ensurepip --upgrade
 
 <!-- .......................................................................... -->
 
-<h3>How to install tailwind with Django using Command<h3>
+<h3>How to download tailwind with Django using Command<h3>
 
 ```terminal
 
@@ -341,3 +341,35 @@ pip install 'django-tailwind[reload]'
 
 <h3>How to add tailwind in root folder's setting.py<h3>
 <img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/tailwind_app_add_in_setting.py_file.png" alt="" height="400px" title="tailwind app add in root folder's setting.py">
+
+
+<h3>How to start server with tailwind after install tailwind<h3>
+<p>Run that command under root folder where manage.py available <p>
+
+```terminal
+
+python manage.py tailwind init
+
+```
+
+<h3>How to set tailwind in root folder's file settin.py<h3>
+
+```python
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'myApp',
+    'tailwind', # add it manualy in setting.py of root folder
+]
+
+TAILWIND_APP_NAME = 'theme' #add that after theme folder create
+INTERNAL_IPS = ['127.0.0.1'] # add that ip because now you have two server after tailwind install
+
+```
+
+<img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/tailwind_setting_under_setting.py_of_root_folder.png" alt="" height="400px" title="tailwind setting in root folder's setting.py">
