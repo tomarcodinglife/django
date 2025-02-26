@@ -373,3 +373,12 @@ INTERNAL_IPS = ['127.0.0.1'] # add that ip because now you have two server after
 ```
 
 <img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/tailwind_setting_under_setting.py_of_root_folder.png" alt="" height="400px" title="tailwind setting in root folder's setting.py">
+
+
+<h3>How to install tailwind after download and setup mandatory settings in setting.py<h3>
+
+```terminal
+
+python manage.py tailwind install
+
+```

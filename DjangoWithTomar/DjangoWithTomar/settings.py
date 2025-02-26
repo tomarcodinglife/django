@@ -42,10 +42,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'myApp',
     'tailwind',
+    'theme',
 ]
 
 TAILWIND_APP_NAME = 'theme' #add that after theme folder create
 INTERNAL_IPS = ['127.0.0.1'] # add that ip because now you have two server after tailwind install
+
+
+# NPM_BIN_PATH = "C:/Program Files/nodejs"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
