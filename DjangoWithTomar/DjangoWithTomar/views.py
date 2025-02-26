@@ -10,3 +10,6 @@ def about(request) :
 
 def contact(request) :
     return HttpResponse("Hello Django, You are one of the best Framework of python - contact Page")
+
+def root(request) :
+    return render(request, 'website/root.html')
