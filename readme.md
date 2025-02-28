@@ -3,20 +3,12 @@ Django is a Python framework that makes it easier to create web sites using Pyth
 
 <h2>Installation Section</h2>
 
-<h3>Install UV</h3>
-<!-- ## Install UV -->
-
-UV is extermiliy fast Python package so that reason i install UV
-
-``` terminal
-pip install uv
-
-```
 <!-- .......................................................................... -->
-<h3>Create Virtal Environment with pip and uv</h3>
+
+<h3>Create Virtal Environment with python </h3>
 
 ``` terminal
-pip uv venv
+py -m venv .venv
 
 ```
 <!-- .......................................................................... -->
