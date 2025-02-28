@@ -344,7 +344,7 @@ python manage.py tailwind init
 
 ```
 
-<h3>How to set tailwind in root folder's file settin.py<h3>
+<h3>How to set tailwind in root folder's file setting.py<h3>
 
 ```python
 
@@ -368,6 +368,8 @@ INTERNAL_IPS = ['127.0.0.1'] # add that ip because now you have two server after
 
 
 <h3>How to install tailwind after download and setup mandatory settings in setting.py<h3>
+
+
 
 ```terminal
 
