@@ -304,6 +304,7 @@ python -m ensurepip --upgrade
 
 <h3>How to download tailwind with Django using Command<h3> 
 
+
 ```terminal
 pip install django-tailwind
 ```
@@ -312,6 +313,7 @@ pip install django-tailwind
 
 
 <h3>tailwind with Django reload Command<h3> 
+
 
 ```terminal
 pip install 'django-tailwind[reload]'
@@ -328,9 +330,11 @@ pip install 'django-tailwind[reload]'
 <h3> How to start server with tailwind after install tailwind <h3>
 <p> Run that command under root folder where manage.py available</p>
 
+
 ```terminal
 python manage.py tailwind init
 ```
+
 
 
 <h3>How to set tailwind in root folder's file setting.py</h3>
