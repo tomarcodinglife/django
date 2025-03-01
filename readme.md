@@ -314,9 +314,7 @@ pip install django-tailwind
 <h3>tailwind with Django reload Command<h3> 
 
 ```terminal
-
 pip install 'django-tailwind[reload]'
-
 ```
 
 
