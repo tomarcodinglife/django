@@ -279,7 +279,7 @@ INSTALLED_APPS = [
 <h2>Tailwind with Django Section<h2>
 
 <h3>How to install tailwind<h3>
-first you should know that tailwind install in Django without error with pip so please check your pip working or not if not working then install again with following two command but use any one command.
+<p>first you should know that tailwind install in Django without error with pip so please check your pip working or not if not working then install again with following two command but use any one command.</p>
 
 <!-- .......................................................................... -->
 
@@ -324,7 +324,7 @@ pip install 'django-tailwind[reload]'
 
 <h3> How to start server with tailwind after install tailwind <h3>
 
-Run that command under root folder where manage.py available
+<p>Run that command under root folder where manage.py available</p>
 
 ```terminal
 python manage.py tailwind init
@@ -345,8 +345,11 @@ INSTALLED_APPS = [
     'myApp',
     'tailwind', # add it manualy in setting.py of root folder
 ]
+
 TAILWIND_APP_NAME = 'theme' #add that after theme folder create
-INTERNAL_IPS = ['127.0.0.1'] # add that ip because now you have two server after tailwind install
+INTERNAL_IPS = ['127.0.0.1'
+
+ # add that ip because now you have two server after tailwind install
 
 ```
 
