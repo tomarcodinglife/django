@@ -280,9 +280,9 @@ INSTALLED_APPS = [
 <img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/my_app_urls_views_setup.gif" alt="" height="400px" title="myApp connect urls.py to main file's urls.py">
 
 
-
-<!-- <h2> Tailwind with Django Section <h2> -->
-
+<!-- .......................................................................... -->
+<h2> Tailwind with Django Section <h2>
+<!-- .......................................................................... -->
 
 <h3>How to install tailwind</h3>
 
@@ -294,27 +294,29 @@ INSTALLED_APPS = [
 python -m pip install --upgrade pip
 ```
 
-
 <h4> Second Command <h4> 
 
 ```terminal
 python -m ensurepip --upgrade
 ```
 
+<!-- .......................................................................... -->
 
-
-<h3> How to download tailwind with Django using Command <h3>
+<h3>How to download tailwind with Django using Command<h3> 
 
 ```terminal
 pip install django-tailwind
 ```
 
+<!-- .......................................................................... -->
 
 
-<h3> tailwind with Django reload Command <h3>
+<h3>tailwind with Django reload Command<h3> 
 
 ```terminal
+
 pip install 'django-tailwind[reload]'
+
 ```
 
 
@@ -336,27 +338,28 @@ python manage.py tailwind init
 ```
 
 
-
-<h3> How to set tailwind in root folder's file setting.py <h3>
+<h3>How to set tailwind in root folder's file setting.py</h3>
 
 ```python
-# INSTALLED_APPS = [
-#     'django.contrib.admin',
-#     'django.contrib.auth',
-#     'django.contrib.contenttypes',
-#     'django.contrib.sessions',
-#     'django.contrib.messages',
-#     'django.contrib.staticfiles',
-#     'myApp',
-#     'tailwind', # add it manualy in setting.py of root folder
-# ]
 
-# TAILWIND_APP_NAME = 'theme' #add that after theme folder create
-# INTERNAL_IPS = ['127.0.0.1']
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'myApp',
+    'tailwind', # add it manualy in setting.py of root folder
+]
 
-#  # add that ip because now you have two server after tailwind install
+TAILWIND_APP_NAME = 'theme' #add that after theme folder create
+INTERNAL_IPS = ['127.0.0.1']
+
+ # add that ip because now you have two server after tailwind install
 
 ```
+
 
 <!-- <img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/tailwind_setting_under_setting.py_of_root_folder.png" alt="" height="400px" title="tailwind setting in root folder's setting.py"> -->
 
