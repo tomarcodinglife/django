@@ -275,23 +275,21 @@ INSTALLED_APPS = [
 <h3>How to control transfer root file urls.py to under new app urls.py (like - myApp)<h3>
 <img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/my_app_urls_views_setup.gif" alt="" height="400px" title="myApp connect urls.py to main file's urls.py">
 
-<!-- .......................................................................... -->
+
 
 <h2> Tailwind with Django Section <h2>
 
-<!-- .......................................................................... -->
+
 
 <h3>How to install tailwind<h3>
 <p> first you should know that tailwind install in Django without error with pip so please check your pip working or not if not working then install again with following two command but use any one command. </p>
-
-<!-- .......................................................................... -->
 
 <h4> First Command <h4>
 
 ```terminal
 python -m pip install --upgrade pip
 ```
-<!-- .......................................................................... -->
+
 
 <h4> Second Command <h4> 
 
@@ -299,7 +297,7 @@ python -m pip install --upgrade pip
 python -m ensurepip --upgrade
 ```
 
-<!-- .......................................................................... -->
+
 
 <h3> How to download tailwind with Django using Command <h3>
 
@@ -307,7 +305,7 @@ python -m ensurepip --upgrade
 pip install django-tailwind
 ```
 
-<!-- .......................................................................... -->
+
 
 <h3> tailwind with Django reload Command <h3>
 
@@ -315,14 +313,14 @@ pip install django-tailwind
 pip install 'django-tailwind[reload]'
 ```
 
-<!-- .......................................................................... -->
+
 
 <h3> How to add tailwind in root folder's setting.py <h3>
 
 <img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/tailwind_app_add_in_setting.py_file.png" alt="" height="400px" title="tailwind app add in root folder's setting.py">
 
 
-<!-- .......................................................................... -->
+
 
 
 <h3> How to start server with tailwind after install tailwind <h3>
@@ -333,7 +331,7 @@ pip install 'django-tailwind[reload]'
 python manage.py tailwind init
 ```
 
-<!-- .......................................................................... -->
+
 
 <h3> How to set tailwind in root folder's file setting.py <h3>
 
@@ -359,7 +357,7 @@ INTERNAL_IPS = ['127.0.0.1']
 <img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/tailwind_setting_under_setting.py_of_root_folder.png" alt="" height="400px" title="tailwind setting in root folder's setting.py">
 
 
-<!-- .......................................................................... -->
+
 
 <h3> How to install tailwind after download and setup mandatory settings in setting.py <h3>
 
