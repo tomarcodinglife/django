@@ -305,15 +305,19 @@ pip install django-tailwind
 ```
 
 <!-- .......................................................................... -->
+
 <h3>tailwind with Django reload Command<h3>
 
 ```terminal
 pip install 'django-tailwind[reload]'
 ```
 
+<!-- .......................................................................... -->
+
 <h3>How to add tailwind in root folder's setting.py<h3>
 <img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/tailwind_app_add_in_setting.py_file.png" alt="" height="400px" title="tailwind app add in root folder's setting.py">
 
+<!-- .......................................................................... -->
 
 <h3>How to start server with tailwind after install tailwind<h3>
 Run that command under root folder where manage.py available
@@ -321,6 +325,8 @@ Run that command under root folder where manage.py available
 ```terminal
 python manage.py tailwind init
 ```
+
+<!-- .......................................................................... -->
 
 <h3>How to set tailwind in root folder's file setting.py<h3>
 
@@ -344,6 +350,8 @@ INTERNAL_IPS = ['127.0.0.1'] # add that ip because now you have two server after
 
 <img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/tailwind_setting_under_setting.py_of_root_folder.png" alt="" height="400px" title="tailwind setting in root folder's setting.py">
 
+
+<!-- .......................................................................... -->
 
 <h3>How to install tailwind after download and setup mandatory settings in setting.py<h3>
 
