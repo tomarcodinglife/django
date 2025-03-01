@@ -9,55 +9,42 @@ Django is a Python framework that makes it easier to create web sites using Pyth
 
 ``` terminal
 py -m venv .venv
-
 ```
 <!-- .......................................................................... -->
 <h3>Virtual Environment Activate</h3>
 
 ```terminal
-
 .venv\Script\activate
-
 ```
 <!-- .......................................................................... -->
 <h3>Virtual Environment Deactivate</h3>
 
 ```terminal
-
 dectivate
-
 ```
 <!-- .......................................................................... -->
 <h3>Install Django</h3>
 
 ```terminal
-
 uv pip install Django
-
 ```
 <!-- .......................................................................... -->
 <h3>Start Project Start</h3>
 
 ```terminal
-
 django-admin startproject DjangowithTomar
-
 ```
 <!-- .......................................................................... -->
 <h3>Run Server</h3>
 
 ```terminal
-
 python manage.py runserver
-
 ```
 <!-- .......................................................................... -->
 <h3>Run Server with specific port if not direct run on default port<h3> 
 
 ```terminal
-
 python manage.py runserver 80001
-
 ```
 
 <h2>Data Flow Section</h2>
@@ -247,9 +234,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 <p>first of all go to root folder where you can see manage.py file by terminal ls command after that run command</p>
 
 ```terminal
-
 python manage.py startapp myApp
-
 ```
 <!-- .......................................................................... -->
 <h3>How to aware my new app folder in django </h3>
@@ -300,18 +285,14 @@ INSTALLED_APPS = [
 <h4>First Command<h4>
 
 ```terminal
-
 python -m pip install --upgrade pip
-
 ```
 <!-- .......................................................................... -->
 
 <h4>Second Command<h4> 
 
 ```terminal
-
 python -m ensurepip --upgrade
-
 ```
 
 <!-- .......................................................................... -->
@@ -319,9 +300,7 @@ python -m ensurepip --upgrade
 <h3>How to download tailwind with Django using Command<h3>
 
 ```terminal
-
 pip install django-tailwind
-
 ```
 
 <!-- .......................................................................... -->
