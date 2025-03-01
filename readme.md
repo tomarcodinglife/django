@@ -269,32 +269,32 @@ INSTALLED_APPS = [
 
 <!-- .......................................................................... -->
 
-<h3>How to create files under templates under new app  (like - myApp)<h3>
+<h3>How to create files under templates under new app  (like - myApp)</h3>
 
 <img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/Django_myApp_templates_under_create_files.gif" alt="" height="400px" title="Create html Files under Django App templates">
 
 <!-- .......................................................................... -->
 
-<h3>How to control transfer root file urls.py to under new app urls.py (like - myApp)<h3>
+<h3>How to control transfer root file urls.py to under new app urls.py (like - myApp)</h3>
 
 <img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/my_app_urls_views_setup.gif" alt="" height="400px" title="myApp connect urls.py to main file's urls.py">
 
 
 <!-- .......................................................................... -->
-<h2> Tailwind with Django Section <h2>
+<h2> Tailwind with Django Section </h2>
 <!-- .......................................................................... -->
 
 <h3>How to install tailwind</h3>
 
 <p> first you should know that tailwind install in Django without error with pip so please check your pip working or not if not working then install again with following two command but use any one command.</p>
 
-<h4> First Command <h4>
+<h4> First Command </h4>
 
 ```terminal
 python -m pip install --upgrade pip
 ```
 
-<h4> Second Command <h4> 
+<h4> Second Command </h4> 
 
 ```terminal
 python -m ensurepip --upgrade
@@ -302,7 +302,7 @@ python -m ensurepip --upgrade
 
 <!-- .......................................................................... -->
 
-<h3>How to download tailwind with Django using Command<h3> 
+<h3>How to download tailwind with Django using Command</h3> 
 
 ```terminal
 pip install django-tailwind
@@ -311,7 +311,7 @@ pip install django-tailwind
 <!-- .......................................................................... -->
 
 
-<h3>tailwind with Django reload Command<h3> 
+<h3>tailwind with Django reload Command</h3> 
 
 ```terminal
 pip install 'django-tailwind[reload]'
@@ -319,13 +319,13 @@ pip install 'django-tailwind[reload]'
 
 
 
-<h3> How to add tailwind in root folder's setting.py <h3>
+<h3> How to add tailwind in root folder's setting.py </h3>
 
 <img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/tailwind_app_add_in_setting.py_file.png" alt="" height="400px" title="tailwind app add in root folder's setting.py">
 
 
 
-<h3> How to start server with tailwind after install tailwind <h3>
+<h3> How to start server with tailwind after install tailwind </h3>
 <p> Run that command under root folder where manage.py available</p>
 
 ```terminal
@@ -362,7 +362,7 @@ INTERNAL_IPS = ['127.0.0.1']
 
 
 
-<h3> How to install tailwind after download and setup mandatory settings in setting.py <h3>
+<h3> How to install tailwind after download and setup mandatory settings in setting.py </h3>
 
 ```terminal
 python manage.py tailwind install
