@@ -350,7 +350,7 @@ INSTALLED_APPS = [
 ]
 
 TAILWIND_APP_NAME = 'theme' #add that after theme folder create
-INTERNAL_IPS = ['127.0.0.1'
+INTERNAL_IPS = ['127.0.0.1']
 
  # add that ip because now you have two server after tailwind install
 
