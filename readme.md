@@ -309,9 +309,7 @@ pip install django-tailwind
 <h3>tailwind with Django reload Command<h3>
 
 ```terminal
-
 pip install 'django-tailwind[reload]'
-
 ```
 
 <h3>How to add tailwind in root folder's setting.py<h3>
@@ -322,9 +320,7 @@ pip install 'django-tailwind[reload]'
 <p>Run that command under root folder where manage.py available <p>
 
 ```terminal
-
 python manage.py tailwind init
-
 ```
 
 <h3>How to set tailwind in root folder's file setting.py<h3>
