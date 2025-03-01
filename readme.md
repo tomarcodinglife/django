@@ -277,7 +277,7 @@ INSTALLED_APPS = [
 
 
 
-<h2> Tailwind with Django Section <h2>
+<!-- <h2> Tailwind with Django Section <h2> -->
 
 
 
