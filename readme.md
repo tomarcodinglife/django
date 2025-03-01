@@ -277,7 +277,9 @@ INSTALLED_APPS = [
 
 <!-- .......................................................................... -->
 <h2>Tailwind with Django Section<h2>
+
 <h3>How to install tailwind<h3>
+
 <p>first you should know that tailwind install in Django without error with pip so please check your pip working or not if not working then install again with following two command but use any one command. </p>
 
 <!-- .......................................................................... -->
@@ -349,12 +351,7 @@ INTERNAL_IPS = ['127.0.0.1'] # add that ip because now you have two server after
 
 
 <h3>How to install tailwind after download and setup mandatory settings in setting.py<h3>
-<h3>How to install tailwind after download and setup mandatory settings in setting.py<h3>
-
-
 
 ```terminal
-
 python manage.py tailwind install
-
 ```
