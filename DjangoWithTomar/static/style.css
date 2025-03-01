@@ -1,0 +1,11 @@
+body {
+    background-color: rgb(31, 28, 28);
+    color: aqua;
+}
+
+h1, h2, h3, h4 {
+
+    text-align: center;
+    color: rgb(127, 168, 255);
+
+}
