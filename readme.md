@@ -352,6 +352,8 @@ INSTALLED_APPS = [
 TAILWIND_APP_NAME = 'theme' #add that after theme folder create
 INTERNAL_IPS = ['127.0.0.1']
 
+NPM_BIN_PATH = "C:/Program Files/nodejs/npm.cmd" # it add as per own system npm location
+
  # add that ip because now you have two server after tailwind install
 
 ```
