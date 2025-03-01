@@ -365,6 +365,8 @@ INTERNAL_IPS = ['127.0.0.1']
 
 
 <h3> How to install tailwind after download and setup mandatory settings in setting.py <h3>
+<h3> How to install tailwind after download and setup mandatory settings in setting.py <h3>
+
 
 ```terminal
 python manage.py tailwind install
