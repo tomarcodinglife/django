@@ -295,7 +295,6 @@ python -m pip install --upgrade pip
 ```
 
 <h4> Second Command <h4> 
-
 ```terminal
 python -m ensurepip --upgrade
 ```
@@ -303,8 +302,6 @@ python -m ensurepip --upgrade
 <!-- .......................................................................... -->
 
 <h3>How to download tailwind with Django using Command<h3> 
-
-
 ```terminal
 pip install django-tailwind
 ```
@@ -313,8 +310,6 @@ pip install django-tailwind
 
 
 <h3>tailwind with Django reload Command<h3> 
-
-
 ```terminal
 pip install 'django-tailwind[reload]'
 ```
@@ -329,8 +324,6 @@ pip install 'django-tailwind[reload]'
 
 <h3> How to start server with tailwind after install tailwind <h3>
 <p> Run that command under root folder where manage.py available</p>
-
-
 ```terminal
 python manage.py tailwind init
 ```
@@ -366,9 +359,6 @@ INTERNAL_IPS = ['127.0.0.1']
 
 
 <h3> How to install tailwind after download and setup mandatory settings in setting.py <h3>
-<h3> How to install tailwind after download and setup mandatory settings in setting.py <h3>
-
-
 ```terminal
 python manage.py tailwind install
 ```
