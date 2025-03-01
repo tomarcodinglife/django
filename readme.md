@@ -341,25 +341,25 @@ python manage.py tailwind init
 <h3> How to set tailwind in root folder's file setting.py <h3>
 
 ```python
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'myApp',
-    'tailwind', # add it manualy in setting.py of root folder
-]
+# INSTALLED_APPS = [
+#     'django.contrib.admin',
+#     'django.contrib.auth',
+#     'django.contrib.contenttypes',
+#     'django.contrib.sessions',
+#     'django.contrib.messages',
+#     'django.contrib.staticfiles',
+#     'myApp',
+#     'tailwind', # add it manualy in setting.py of root folder
+# ]
 
-TAILWIND_APP_NAME = 'theme' #add that after theme folder create
-INTERNAL_IPS = ['127.0.0.1']
+# TAILWIND_APP_NAME = 'theme' #add that after theme folder create
+# INTERNAL_IPS = ['127.0.0.1']
 
- # add that ip because now you have two server after tailwind install
+#  # add that ip because now you have two server after tailwind install
 
 ```
 
-<img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/tailwind_setting_under_setting.py_of_root_folder.png" alt="" height="400px" title="tailwind setting in root folder's setting.py">
+<!-- <img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/tailwind_setting_under_setting.py_of_root_folder.png" alt="" height="400px" title="tailwind setting in root folder's setting.py"> -->
 
 
 
