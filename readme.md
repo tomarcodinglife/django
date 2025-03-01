@@ -323,7 +323,9 @@ python -m ensurepip --upgrade
 pip install django-tailwind
 
 ```
+
 <!-- .......................................................................... -->
+<h3>tailwind with Django reload Command<h3>
 
 ```terminal
 
