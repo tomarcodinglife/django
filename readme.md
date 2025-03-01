@@ -325,11 +325,8 @@ pip install 'django-tailwind[reload]'
 
 
 
-
-
 <h3> How to start server with tailwind after install tailwind <h3>
-
-<p>Run that command under root folder where manage.py available</p>
+<p> Run that command under root folder where manage.py available</p>
 
 ```terminal
 python manage.py tailwind init
