@@ -41,7 +41,7 @@ django-admin startproject DjangowithTomar
 python manage.py runserver
 ```
 <!-- .......................................................................... -->
-<h3>Run Server with specific port if not direct run on default port<h3> 
+<h3>Run Server with specific port if not direct run on default port</h3> 
 
 ```terminal
 python manage.py runserver 80001
