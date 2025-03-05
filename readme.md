@@ -453,3 +453,26 @@ MIDDLEWARE = [
 ]
 ```
 
+<p> After that run separate terminal (its tailwind updated automatically) </p>
+
+```terminal
+python manage.py runserver 
+```
+
+<p> After that run separate terminal (its virtual environment reload automatically) </p>
+
+```terminal
+.venv/Scripts/activate
+```
+
+<h3>If you want to migrate properly files</h3>
+
+```terminal
+python manage.py migrate
+```
+
+<h3>after that you run server properly</h3>
+
+```terminal
+python manage.py runserver
+```
