@@ -72,7 +72,7 @@ User => HTTP Response => URL Match in URL Router (url.py) => veiw function (view
 <h2>Directory Section</h2>
 
 <!-- .......................................................................... -->
-<h3>How to make Ready to Response file</h3>
+<h3>Make Ready to Response file</h3>
 
 after virtual environment create a folder views.py and import HttpResponse from django.http
 
@@ -132,18 +132,18 @@ python manage.py runserver
 
 ```
 <!-- .......................................................................... -->
-<h3>How to create Templates folder</h3>
+<h3>Create Templates folder</h3>
 
 under main project folder (root folder) you can create a folder to templates name for contain html files
 
 <!-- .......................................................................... -->
 
-<h3>How to create static folder </h3>
+<h3>Create static folder </h3>
 under main project folder (root folder) you can create a folder to static name for contain css, javascript files
 
 <!-- .......................................................................... -->
 
-<h3>Which class import for data response to client web browser</h3>
+<h3>Class import for data response to client web browser</h3>
 
 ```python
 
@@ -152,7 +152,7 @@ from django.http import HttpResponse
 ```
 <!-- .......................................................................... -->
 
-<h3>Which function import for html files render</h3>
+<h3>Function import for html files render</h3>
 
 ```python
 
@@ -170,7 +170,7 @@ def about(request):
 ```
 <!-- .......................................................................... -->
 
-<h3>How to set in setting.py for new page load</h3>
+<h3>Set in setting.py for new page load</h3>
 
 ```python
 # in DIRS you put file name templates
@@ -192,7 +192,7 @@ TEMPLATES = [
 
 ```
 <!-- .......................................................................... -->
-<h3>How to link css with html in django</h3>
+<h3>Link css with html in django</h3>
 
 ```html
 
@@ -215,7 +215,7 @@ TEMPLATES = [
 <!-- .......................................................................... -->
 <h3>CSS Files Setup in Django Section</h3>
 <!-- .......................................................................... -->
-<h3>How to setting (setting.py) static file directory file in django</h3>
+<h3>Setting (setting.py) static file directory file in django</h3>
 
 ```python
 
@@ -230,14 +230,14 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 <!-- .......................................................................... -->
 <h2>App Section </h2>
 <!-- .......................................................................... -->
-<h3>How to create apps folder in django</h3>
+<h3>Create apps folder in django</h3>
 <p>first of all go to root folder where you can see manage.py file by terminal ls command after that run command</p>
 
 ```terminal
 python manage.py startapp myApp
 ```
 <!-- .......................................................................... -->
-<h3>How to aware my new app folder in django </h3>
+<h3>Aware my new app folder in django </h3>
 <p>Go to settings.py file where you see by default installed apps you join the new app name that you create like myApp</p>
 
 ```python
@@ -255,13 +255,13 @@ INSTALLED_APPS = [
 
 ```
 <!-- .......................................................................... -->
-<h3>Where can you create templates folder for New App (like myApp)</h3>
+<h3>Create templates folder for New App (like myApp) as per required</h3>
 <p>you can use templates folder which is already exist in root directory or you can create a folder under new app (like - myApp)<p>
 <img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/File_Directory_for_Django.png" alt="" height="500px" title="Directory">
 
 <!-- .......................................................................... -->
 
-<h3>How add django html for suggestion (emmet) for new app </h3>
+<h3>Add django html for suggestion (emmet) for new app </h3>
 
 <p> press (ctrl + ,) => go to Emmet include Language and set in item section django-html and in value section html</p>
 
@@ -269,13 +269,13 @@ INSTALLED_APPS = [
 
 <!-- .......................................................................... -->
 
-<h3>How to create files under templates under new app  (like - myApp) </h3>
+<h3>Create files under templates under new app  (like - myApp) </h3>
 
 <img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/Django_myApp_templates_under_create_files.gif" alt="" height="400px" title="Create html Files under Django App templates">
 
 <!-- .......................................................................... -->
 
-<h3>How to control transfer root file urls.py to under new app urls.py (like - myApp)</h3>
+<h3>Control transfer root file urls.py to under new app urls.py (like - myApp)</h3>
 
 <img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/my_app_urls_views_setup.gif" alt="" height="400px" title="myApp connect urls.py to main file's urls.py">
 
@@ -284,7 +284,7 @@ INSTALLED_APPS = [
 <h2> Tailwind with Django Section </h2>
 <!-- .......................................................................... -->
 
-<h3>How to install tailwind</h3>
+<h3>Install tailwind</h3>
 
 <p> first you should know that tailwind install in Django without error with pip so please check your pip working or not if not working then install again with following two command but use any one command.</p>
 
@@ -302,7 +302,7 @@ python -m ensurepip --upgrade
 
 <!-- .......................................................................... -->
 
-<h3>How to download tailwind with Django using Command</h3> 
+<h3>Download tailwind with Django using Command</h3> 
 
 ```terminal
 pip install django-tailwind
@@ -325,7 +325,7 @@ pip install 'django-tailwind[reload]'
 
 <!-- .......................................................................... -->
 
-<h3> How to start server with tailwind after install tailwind </h3>
+<h3> Start server with tailwind after install tailwind </h3>
 <p> Run that command under root folder where manage.py available</p>
 
 ```terminal
@@ -334,7 +334,7 @@ python manage.py tailwind init
 
 <!-- .......................................................................... -->
 
-<h3>How to set tailwind in root folder's file setting.py</h3>
+<h3>Set tailwind in root folder's file setting.py</h3>
 
 ```python
 
@@ -359,7 +359,7 @@ INSTALLED_APPS = [
 
 <!-- .......................................................................... -->
 
-<h3> How to install tailwind after download and setup mandatory settings in setting.py </h3>
+<h3> Install tailwind after download and setup mandatory settings in setting.py </h3>
 
 ```terminal
 python manage.py tailwind install
@@ -367,7 +367,7 @@ python manage.py tailwind install
 
 <!-- .......................................................................... -->
 
-<h3>How to set tailwind theme in root folder's file setting.py</h3>
+<h3>Set tailwind theme in root folder's file setting.py</h3>
 
 ```python
 
@@ -398,4 +398,58 @@ NPM_BIN_PATH = "C:/Program Files/nodejs/npm.cmd" # it add as per own system npm 
 
 <img src="https://raw.githubusercontent.com/tomarcodinglife/Data_File/refs/heads/main/imageData/tailwind_html_file_under_django_theme_after_tailwind_installation.png" alt="" height="400px" title="tailwind theme ">
 
+<!-- .......................................................................... -->
+
+<h3> After Install tailwind you can use tailwind css under own app look like that</h3>
+
+<img src="https://raw.githubusercontent.com/tomarcodinglife/Data_File/refs/heads/main/imageData/after_install_tailwind_you_add_tailwind_css_under_own_app_html_files.png" alt="" height="400px" title="tailwind theme">
+
+<!-- .......................................................................... -->
+
+<h2>Webpage or Web browser automatically reload section</h2>
+
+<!-- .......................................................................... -->
+
+<h3>reload webpage or web browser automatically</h3>
+<p>Now you want reload webpage or web browser automatically for both tailwind and django so In this case you will have to use a separate terminal for Tailwind css and a separate terminal for Django. As shown in the picture above</p>
+
+<h3>Run command for django auto reload page </h3>
+
+<p> First Run this command in seprate terminal </p>
+
+```terminal
+python -m pip install django-browser-reload
+```
+
+<p> Ensure you have "django.contrib.staticfiles" in your INSTALLED_APPS </p>
+
+<p> Add django-browser-reload to your INSTALLED_APPS </p>
+
+```python
+INSTALLED_APPS = [
+    ...,
+    "django_browser_reload",
+    ...,
+]
+```
+<p> Include the app URLs in your root URLconf </p>
+
+```python
+from django.urls import include, path
+
+urlpatterns = [
+    ...,
+
+    path("__reload__/", include("django_browser_reload.urls")),
+]
+```
+<p> Add the middleware </p>
+
+```python
+MIDDLEWARE = [
+    # ...
+    "django_browser_reload.middleware.BrowserReloadMiddleware",
+    # ...
+]
+```
 
