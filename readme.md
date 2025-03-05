@@ -396,6 +396,6 @@ NPM_BIN_PATH = "C:/Program Files/nodejs/npm.cmd" # it add as per own system npm 
 
 <h3> After Install tailwind its html file look like that under theme folder</h3>
 
-<img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/tailwind_app_add_in_setting.py_file.png" alt="" height="400px" title="tailwind theme ">
+<img src="https://raw.githubusercontent.com/tomarcodinglife/Data_File/refs/heads/main/imageData/tailwind_html_file_under_django_theme_after_tailwind_installation.png" alt="" height="400px" title="tailwind theme ">
 
 
