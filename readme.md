@@ -317,13 +317,13 @@ pip install django-tailwind
 pip install 'django-tailwind[reload]'
 ```
 
-
+<!-- .......................................................................... -->
 
 <h3> How to add tailwind in root folder's setting.py </h3>
 
 <img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/tailwind_app_add_in_setting.py_file.png" alt="" height="400px" title="tailwind app add in root folder's setting.py">
 
-
+<!-- .......................................................................... -->
 
 <h3> How to start server with tailwind after install tailwind </h3>
 <p> Run that command under root folder where manage.py available</p>
@@ -332,7 +332,7 @@ pip install 'django-tailwind[reload]'
 python manage.py tailwind init
 ```
 
-
+<!-- .......................................................................... -->
 
 <h3>How to set tailwind in root folder's file setting.py</h3>
 
@@ -352,17 +352,20 @@ INSTALLED_APPS = [
 
 ```
 
+<!-- .......................................................................... -->
 
 <!-- <img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/tailwind_setting_under_setting.py_of_root_folder.png" alt="" height="400px" title="tailwind setting in root folder's setting.py"> -->
 
 
-
+<!-- .......................................................................... -->
 
 <h3> How to install tailwind after download and setup mandatory settings in setting.py </h3>
 
 ```terminal
 python manage.py tailwind install
 ```
+
+<!-- .......................................................................... -->
 
 <h3>How to set tailwind theme in root folder's file setting.py</h3>
 
@@ -388,6 +391,8 @@ NPM_BIN_PATH = "C:/Program Files/nodejs/npm.cmd" # it add as per own system npm 
  # add that ip because now you have two server after tailwind install
 
 ```
+
+<!-- .......................................................................... -->
 
 <h3> After Install tailwind its html file look like that under theme folder</h3>
 
