@@ -10,13 +10,26 @@ Django is a Python framework that makes it easier to create web sites using Pyth
 ``` terminal
 py -m venv .venv
 ```
+
 <!-- .......................................................................... -->
+
+<h3>You can pip update </h3>
+
+```terminal
+py -m pip install --upgrade pip
+py -m pip --version
+```
+
+<!-- .......................................................................... -->
+
 <h3>Virtual Environment Activate</h3>
 
 ```terminal
-.venv\Script\activate
+.venv\Scripts\activate
 ```
+
 <!-- .......................................................................... -->
+
 <h3>Virtual Environment Deactivate</h3>
 
 ```terminal
@@ -26,7 +39,7 @@ dectivate
 <h3>Install Django</h3>
 
 ```terminal
-uv pip install Django
+py -m pip install Django
 ```
 <!-- .......................................................................... -->
 <h3>Start Project Start</h3>
@@ -47,6 +60,8 @@ python manage.py runserver
 python manage.py runserver 80001
 ```
 
+<!-- .......................................................................... -->
+
 <h2>Data Flow Section</h2>
 
 <!-- .......................................................................... -->
@@ -59,7 +74,7 @@ User => HTTP Response => URL Match in URL Router (url.py) => veiw function (view
 <!-- .......................................................................... -->
 <h3>How to make Ready to Response file</h3>
 
-after virtual environment go to views.py and import HttpResponse from django.http
+after virtual environment create a folder views.py and import HttpResponse from django.http
 
 ```python
 
@@ -146,11 +161,11 @@ from django.shortcut import render
 # Example 01
 
 def home(request):
-    return render (request, 'index.html') 
+    return render (request, 'index.html') # if the html file name are index.html
 
 # Example 02 : if files contain in folder like website
 def about(request):
-    return render (request, 'website/index.html')
+    return render (request, 'website/index.html') 
 
 ```
 <!-- .......................................................................... -->
@@ -158,28 +173,11 @@ def about(request):
 <h3>How to set in setting.py for new page load</h3>
 
 ```python
-
-# in templates section by default look like this 
-TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
-            ],
-        },
-    },
-]
 # in DIRS you put file name templates
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'], # its mandatory
+        'DIRS': ['templates'], # its mandatory to render templates files
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -214,6 +212,8 @@ TEMPLATES = [
 </html>
 
 ```
+<!-- .......................................................................... -->
+<h3>CSS Files Setup in Django Section</h3>
 <!-- .......................................................................... -->
 <h3>How to setting (setting.py) static file directory file in django</h3>
 
@@ -269,7 +269,7 @@ INSTALLED_APPS = [
 
 <!-- .......................................................................... -->
 
-<h3>How to create files under templates under new app  (like - myApp)</h3>
+<h3>How to create files under templates under new app  (like - myApp) </h3>
 
 <img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/Django_myApp_templates_under_create_files.gif" alt="" height="400px" title="Create html Files under Django App templates">
 
@@ -348,12 +348,6 @@ INSTALLED_APPS = [
     'myApp',
     'tailwind', # add it manualy in setting.py of root folder
 ]
-
-TAILWIND_APP_NAME = 'theme' #add that after theme folder create
-INTERNAL_IPS = ['127.0.0.1']
-
-NPM_BIN_PATH = "C:/Program Files/nodejs/npm.cmd" # it add as per own system npm location
-
  # add that ip because now you have two server after tailwind install
 
 ```
@@ -369,3 +363,34 @@ NPM_BIN_PATH = "C:/Program Files/nodejs/npm.cmd" # it add as per own system npm 
 ```terminal
 python manage.py tailwind install
 ```
+
+<h3>How to set tailwind theme in root folder's file setting.py</h3>
+
+```python
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'myApp',
+    'tailwind', # add it manualy in setting.py of root folder
+    'theme',    # add it as per your theme name (default i lkie theme like that)
+]
+
+TAILWIND_APP_NAME = 'theme' #add that after theme folder create if your theme folder name theme
+INTERNAL_IPS = ['127.0.0.1']
+
+NPM_BIN_PATH = "C:/Program Files/nodejs/npm.cmd" # it add as per own system npm location
+
+ # add that ip because now you have two server after tailwind install
+
+```
+
+<h3> After Install tailwind its html file look like that under theme folder</h3>
+
+<img src="https://github.com/tomarcodinglife/Data_File/blob/main/imageData/tailwind_app_add_in_setting.py_file.png" alt="" height="400px" title="tailwind theme ">
+
+
