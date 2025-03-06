@@ -476,3 +476,25 @@ python manage.py migrate
 ```terminal
 python manage.py runserver
 ```
+
+<h3>After migrate properly you go to admin page</h3>
+<p> After migrate and runserver you can see (server run ip/admin) page </p>
+
+
+
+
+<h3> Create Super user for acess admin page </h3>
+
+```terminal
+python manage.py createsuperuser
+```
+<p> After that set username its mandatory and email is optional and set password with special character and character should be more than 8 character after that you can login admin page using credentials </p>
+
+
+
+<h3>Change Password for admin page</h3>
+
+```terminal
+python manage.py changepassword username
+```
+<p> After that set password with special character and character should be more than 8 character after that you can login admin page using credentials</p>
