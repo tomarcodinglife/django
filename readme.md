@@ -525,6 +525,10 @@ class courseType(models.Model): # This is a model class
     course_type = models.CharField(max_length=4, choices=courseTypes) # This is a choice field
     course_description = models.TextField() # This is a text field
 
+# it is used to display the name of the course in the admin panel
+def __str__(self):
+    return self.name
+
 ```
 
 <h3>Now handle Image in Django</h3>
@@ -558,4 +562,16 @@ python manage.py makemigrations myApp
 
 ```terminal
 python manage.py migrate
+```
+<h3>Admin Pannel</h3>
+
+<h3>Models show in django admin pannel</h3>
+<p>after writing models if you want to show models in admin pannel than you can follow step as per bellow mention in admin.py</p>
+
+
+```python
+# Register your models here.
+from .models import Course
+
+admin.site.register(Course) # This is a model class
 ```
