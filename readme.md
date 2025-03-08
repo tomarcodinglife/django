@@ -520,17 +520,42 @@ class courseType(models.Model): # This is a model class
         ('DB', 'Database'),
     ]
     course_name = models.CharField(max_length=30) # This is a char field
-    image = models.ImageField(upload_to = 'images/') # This is an image field
+    image = models.ImageField(upload_to = 'media/') # This is an image field
     course_publish_date = models.DateTimeField(default=timezone.now) # This is a date time field
     course_type = models.CharField(max_length=4, choices=courseTypes) # This is a choice field
     course_description = models.TextField() # This is a text field
 
 ```
 
-<h3>Now handle Image with install pillow</h3>
+<h3>Now handle Image in Django</h3>
+<p>first step install pillo as per bellow command after that setup in seting.py files and finally set urls.py in root folder</p>
 
 ```terminal
 
 python -m pip install Pillow
 
+```
+
+```python
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+```
+
+```python
+from django.conf import settings
+from django.conf.urls.static import static
+
+urlpatterns = [
+    
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+```
+<h3>After writing Model (Models.py) run this command for migrate </h3>
+
+```terminal
+python manage.py makemigrations myApp
+```
+
+```terminal
+python manage.py migrate
 ```
