@@ -530,5 +530,7 @@ class courseType(models.Model): # This is a model class
 <h3>Now handle Image with install pillow</h3>
 
 ```terminal
+
 python -m pip install Pillow
+
 ```
