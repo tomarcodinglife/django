@@ -498,3 +498,37 @@ python manage.py createsuperuser
 python manage.py changepassword username
 ```
 <p> After that set password with special character and character should be more than 8 character after that you can login admin page using credentials</p>
+
+
+<h2>models (models.py) Section</h2>
+
+<h3>write models (models.py) as per your need</h3>
+<p>Now you can write models (models.py) in own created apps as per your nee like bellow mention</p>
+
+```python
+
+from django.db import models
+from django.utils import timezone
+# Create your models here.
+class courseType(models.Model): # This is a model class
+    courseTypes = [             # This is a list of tuples
+        ('JS', 'Javascript'),
+        ('PY', 'Python'),
+        ('CPP', 'C++'),
+        ('C#', 'C Sharp'),
+        ('Java', 'Java'),
+        ('DB', 'Database'),
+    ]
+    course_name = models.CharField(max_length=30) # This is a char field
+    image = models.ImageField(upload_to = 'images/') # This is an image field
+    course_publish_date = models.DateTimeField(default=timezone.now) # This is a date time field
+    course_type = models.CharField(max_length=4, choices=courseTypes) # This is a choice field
+    course_description = models.TextField() # This is a text field
+
+```
+
+<h3>Now handle Image with install pillow</h3>
+
+```terminal
+python -m pip install Pillow
+```
