@@ -2,7 +2,7 @@ from django.db import models
 from django.utils import timezone
 # Create your models here.
 class Course(models.Model): # This is a model class
-    Required_Language = [             # This is a list of tuples
+    Required_Language = [   # This is a list of tuples
         ('JS', 'Javascript'),
         ('PY', 'Python'),
         ('CPP', 'C++'),
