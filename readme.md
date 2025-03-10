@@ -578,10 +578,30 @@ admin.site.register(Course) # This is a model class
 <p>after writing models if you want to show models in frontend than you can follow step as per bellow mention in views.py</p>
 
 ```python
-
 # Register your models here.
 def myApp(request) :
     courses = Course.objects.all()
     return render(request, 'myApp/django.html', {'courses': courses})
+```
+
+<p>after that you can import layout block and import models in app (like - myApp) templates html files </p>
+
+```python
+{% extends "layout.html" %}
+{% block title %} Sujit Tomar {% endblock title %}
+{% block content %} 
+<h1 class="font-bold size-20 bg-orange-400 text-black h-full w-full p-2">Hi This is Django with My App Page</h1>
+{% for course in courses %}
+    <div class="inline-flex flex flex-col items-center justify-center p-2 m-4 bg-gray-200 rounded-lg shadow-lg w-80">
+
+        <img class="h-40 w-96 " src="{{course.thumbnails.url}}" alt="">
+        <h3 class="text-gray-950 p-2 font-bold">{{course.course_Name}}</h3>
+        <p class="text-black text-justify ">{{course.Course_Description}}</p>
+        <button class="bg-orange-400 rounded-md p-1 w-50 text-black">Buy Now</button>
     
+    </div>
+
+{% endfor %}
+{% endblock content %} 
+
 ```
