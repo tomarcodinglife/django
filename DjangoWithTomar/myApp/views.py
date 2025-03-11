@@ -8,7 +8,7 @@ def myApp(request) :
     courses = Course.objects.all()
     return render(request, 'myApp/home.html', {'courses': courses})
 
-def course_details(request, course_id):
+def course_detail(request, course_id):
     course=get_object_or_404(Course, id=course_id)
     return render (request, 'myApp/course_detail.html', {'course': course})
 

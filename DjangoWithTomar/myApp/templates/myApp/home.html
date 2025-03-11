@@ -16,11 +16,15 @@
         <h3 class="text-gray-950 p-2 font-bold">{{course.course_Name}}</h3>
         {% comment %} <p class="text-black text-justify ">{{course.course_Description}}</p> {% endcomment %}
         <h3 class="text-black text-justify ">INR {{course.course_Price}}/-</h3>
-        <button class="bg-orange-400 rounded-md p-1 w-full text-black">Buy Now</button>
+
+        <a href="{% url "course_detail" course.id %}">
+            <button class="bg-orange-400 rounded-md p-1 w-full text-black">
+                {{course.course_Name}} - {{course.id}}
+                {% comment %} Buy Now {% endcomment %}
+            </button>
+        </a>
     
     </div>
-
-
 
 {% endfor %}
 
