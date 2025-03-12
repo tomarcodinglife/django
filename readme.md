@@ -507,6 +507,9 @@ python manage.py changepassword username
 
 ```python
 
+from django.db import models
+from django.utils import timezone
+
 class Course(models.Model): # This is a model class
     Required_Language = [             # This is a list of tuples
         ('JS', 'Javascript'),
@@ -517,7 +520,7 @@ class Course(models.Model): # This is a model class
         ('DB', 'Database'),
     ]
     course_Name = models.CharField(max_length=30) # This is a char field
-    thumbnails = models.ImageField(upload_to = 'media/') # This is an image field
+    thumbnails = models.ImageField(upload_to = 'media/') #This is an image field (pillo install for image handle)
     course_publish_date = models.DateTimeField(default=timezone.now) # This is a date time field
     Language_Required = models.CharField(max_length=4, choices=Required_Language) # This is a choice field
     Course_Description = models.TextField() # This is a text field
@@ -538,10 +541,14 @@ python -m pip install Pillow
 
 ```
 
+<p>in setting.py in same root file</p>
+
 ```python
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 ```
+
+<p>in urls.py in same root file</p>
 
 ```python
 from django.conf import settings
@@ -580,7 +587,7 @@ admin.site.register(Course) # This is a model class
 ```python
 # Register your models here.
 def myApp(request) :
-    courses = Course.objects.all()
+    courses = Course.objects.all() # all means its return array
     return render(request, 'myApp/django.html', {'courses': courses})
 ```
 
@@ -591,10 +598,11 @@ def myApp(request) :
 {% block title %} Sujit Tomar {% endblock title %}
 {% block content %} 
 <h1 class="font-bold size-20 bg-orange-400 text-black h-full w-full p-2">Hi This is Django with My App Page</h1>
+
 {% for course in courses %}
     <div class="inline-flex flex flex-col items-center justify-center p-2 m-4 bg-gray-200 rounded-lg shadow-lg w-80">
 
-        <img class="h-40 w-96 " src="{{course.thumbnails.url}}" alt="">
+        <img class="h-40 w-96 " src="{{course.thumbnails.url}}" alt=""> # required Pillow for image handle
         <h3 class="text-gray-950 p-2 font-bold">{{course.course_Name}}</h3>
         <p class="text-black text-justify ">{{course.Course_Description}}</p>
         <button class="bg-orange-400 rounded-md p-1 w-50 text-black">Buy Now</button>
@@ -603,5 +611,72 @@ def myApp(request) :
 
 {% endfor %}
 {% endblock content %} 
+
+```
+
+<h3> Models urls generate dynemically for details views as per id of sqlite </h3>
+
+<p>set views in views.py</p>
+
+```python
+
+from django.shortcuts import render
+from .models import Course
+from django.shortcuts import get_object_or_404
+
+# Create your views here.
+
+def myApp(request) :
+    courses = Course.objects.all()
+    return render(request, 'myApp/home.html', {'courses': courses})
+
+def course_detail(request, course_id):
+    course=get_object_or_404(Course, id=course_id)
+    return render (request, 'myApp/course_detail.html', {'course': course}) # create course_details.html in myApp which is availabel in templates folder
+
+```
+
+<p>after that you set url in urls.py </p>
+
+```python
+
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.myApp, name = 'myApp Home Page'),
+    path('<int:course_id>/', views.course_detail, name = 'course_detail'),
+]
+
+```
+
+
+<p>After that you can set variables and templates as per layout or independently</p>
+
+```python
+
+{% extends "layout.html" %}
+{% block title %} Course Details Page {% endblock title %}
+{% block content %} 
+
+
+<h1 class="font-bold size-20 bg-orange-400 text-black h-full w-full p-2">Course Details Page</h1>
+<div class="items-center justify-center p-2 m-4 bg-gray-200 rounded-lg shadow-lg w-80">
+
+    <img class="h-40 w-96 " src="{{course.thumbnails.url}}" alt="">
+    <h3 class="text-gray-950 p-2 font-bold">{{course.course_Name}}</h3>
+    {% comment %} <p class="text-black text-justify ">{{course.course_Description}}</p> {% endcomment %}
+    <h3 class="text-black text-justify ">INR {{course.course_Price}}/-</h3>
+    <p>{{course.course_Description}}</p>
+
+    <a href="{% url "course_detail" course.id %}"> # url template
+        <button class="bg-orange-400 rounded-md p-1 w-full text-black">
+            Add to Cart
+            {% comment %} Buy Now {% endcomment %}
+        </button>
+    </a>
+
+</div>
+{% endblock content %}  
 
 ```
