@@ -614,7 +614,7 @@ def myApp(request) :
 
 ```
 
-<h3> Models urls generate dynemically for details views as per id of sqlite </h3>
+<h3> Models urls generate dynemically for details views as per course id of sqlite </h3>
 
 <p>set views in views.py</p>
 
